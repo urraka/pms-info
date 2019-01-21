@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<title>Scenery Info</title>
+	<style type="text/css">
+		html, body {
+			margin: 10px;
+			padding: 0;
+			font-family: Consolas, monospace;
+			font-size: 9pt;
+		}
+
+		table {margin:0 auto;width:920px;border-collapse:collapse;}
+		td {padding:5px 9px; vertical-align:top;}
+		td:nth-child(1) {width:1px;}
+		td:nth-child(2) {width:1px; text-align:right; white-space:nowrap;}
+		td:nth-child(3) {width:1px; text-align:right; white-space:nowrap;}
+		tr:nth-child(odd) {background:#eeeeee}
+
+		#loader {
+			display:none;
+			position:fixed;
+			border:1px solid #000;
+			margin:0 auto;
+			padding:5px 15px;
+			top:20px;
+			left:20px;
+		}
+
+		body.loading #loader {display:block;}
+	</style>
+</head>
+<body>
+<script src="map.js"></script>
+<script src="scalelist.js"></script>
+<div id="loader">Loading 1/10</div>
+</body>
+</html>
